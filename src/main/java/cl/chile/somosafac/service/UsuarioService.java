@@ -47,12 +47,12 @@ public class UsuarioService {
             UsuarioEntity usuario = usuarioExistente.get();
             usuario.setNombre(usuarioDTO.getNombre());
             usuario.setApellido(usuarioDTO.getApellido());
-            usuario.setPrimerIngreso(usuarioDTO.getPrimerIngreso());
             usuario.setCorreo(usuarioDTO.getCorreo());
-            usuario.setTipoUsuario(usuarioDTO.getTipoUsuario());
-            usuario.setActivo(usuarioDTO.getActivo());
-            usuario.setVerificado(usuarioDTO.getVerificado());
-            usuario.setAceptarTerminos(usuarioDTO.getAceptarTerminos());
+            //usuario.setPrimerIngreso(usuarioDTO.getPrimerIngreso());
+            //usuario.setTipoUsuario(usuarioDTO.getTipoUsuario());
+            //usuario.setActivo(usuarioDTO.getActivo());
+            //usuario.setVerificado(usuarioDTO.getVerificado());
+            //usuario.setAceptarTerminos(usuarioDTO.getAceptarTerminos());
 
             usuario = usuarioRepository.save(usuario);
 
