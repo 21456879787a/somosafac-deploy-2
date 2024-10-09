@@ -45,8 +45,10 @@ public class UsuarioService {
 
         if (usuarioExistente.isPresent()) {
             UsuarioEntity usuario = usuarioExistente.get();
+            usuario.setNombre(usuarioDTO.getNombre());
+            usuario.setApellido(usuarioDTO.getApellido());
+            usuario.setPrimerIngreso(usuarioDTO.getPrimerIngreso());
             usuario.setCorreo(usuarioDTO.getCorreo());
-//            usuario.setContrasenaHash(usuarioDTO.getContrasenaHash());
             usuario.setTipoUsuario(usuarioDTO.getTipoUsuario());
             usuario.setActivo(usuarioDTO.getActivo());
             usuario.setVerificado(usuarioDTO.getVerificado());
